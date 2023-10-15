@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<body>
+    <label for="first_name">First name</label>
+
+    <input type="text" id="first_name" name="first_name" required minlength="4"  size="10" />
+    
+    <label for="last_name">Last name</label>
+    
+    <input type="text" id="last_name" name="last_name" required minlength="4"  size="10" />
+    <p id="warning1">5564 </p>
+    <p id="warning2"> </p>
+    <script>
+    if(document.getElementById("first_name").length > 19 ){
+        document.getElementById("warning1").innerHTML = "WARNING: FIRST NAME IS OVER 20 CHARCTERS!!!"
+    }
+    if(document.getElementById("last_name").length > 19 ){
+        document.getElementById("warning2").innerHTML = "WARNING; LAST NAME IS OVER 20 CHARCTERS!!!"
+    }
+</script>
+</body>
